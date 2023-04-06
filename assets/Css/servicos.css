@@ -1,0 +1,76 @@
+main{
+    font-family: sans-serif;
+    color: #fff;
+    margin: 14rem 0;
+}
+h2{
+    font-size: 4.5rem;
+    margin:4rem;
+}
+.paragrafo_estagio{
+    margin-left: 4rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    margin-right: 2.5rem ;
+
+}
+p{
+    font-size: 1.6rem;
+}
+h3{
+    font-size: 2.2rem;
+    margin: 2rem;
+    font-family: arial;
+    color: red;
+}
+.colunas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container_conteudo{
+    text-align: center;
+    box-shadow: 3px 3px  30px 1px red ;
+    border-radius: 9px;
+    width: calc(80%/2);
+    margin:4rem auto ;
+    padding: 2rem;
+    line-height: 3rem;
+    background-color: rgb(7, 7, 7);
+}
+.icones_estagio{   
+    width: 6vw;
+    height: 6vw;
+    background-color: #fff;
+    padding: 0.5vw;
+    border-radius: 23px;  
+}
+.container_conteudo_3{
+    text-align: center;
+    box-shadow: 3px 3px  30px 1px red ;
+    border-radius: 9px;
+    width: calc(80%/3);
+    margin:4rem auto ;
+    padding: 2rem;
+    line-height: 3rem;
+    background-color: rgb(7, 7, 7);
+}
+@media (max-width:840px){
+    h2{
+        font-size: 3.3rem;
+        margin:4rem;
+    }
+    .paragrafo_estagio{
+        font-size: 1.4rem;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+    .container_conteudo_3{
+        width: calc(80%/2);
+    }
+}
+@media (max-width:560px){
+   .container_conteudo, .container_conteudo_3{
+    width: 80%;
+   }
+}

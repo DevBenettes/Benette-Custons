@@ -1,0 +1,47 @@
+section{
+    margin: 15rem auto;
+    max-width: 90%;
+}
+section .logo_main{
+    margin: 0;
+}
+section p{
+    color: white;
+    font-size: 3rem;
+    margin: 0 auto;
+    padding: 1.4rem;
+}
+.logo_main{
+    font-family: dancing Script;
+    font-size: 6.5rem;
+    font-weight:900;
+    margin: 6rem 0 1.5rem 5%; 
+}
+.geral_imagens{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin:  0 2rem ;
+    padding: 0.5rem;
+}
+.geral_imagens figure{
+    flex: 1 1 300px;
+    margin: 2rem;
+    width: 5rem;
+}
+figcaption{
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+}
+@media (max-width:500px){
+    .logo_main{
+        font-size: 5rem;
+    }
+    section p{
+        font-size: 2rem;
+    }
+    figcaption{
+        font-size: 3rem;
+    }
+}

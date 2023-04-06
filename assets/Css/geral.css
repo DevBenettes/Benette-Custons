@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* -------------- start barra scroll -------------- */
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-track{
+    background-color: #1f1f1f;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(224, 0, 0);
+    border-radius: 10px;
+    border: 2px solid  #1f1f1f;
+}
+/* -------------- /End barra scroll -------------- */
+
+/* -------------- Start estilos Gerais -------------- */
+html{
+    font-size: 62.5%;
+}
+body{
+    padding-top: 0.2vw;
+    background-color:rgb(11, 11, 11);
+}
+body, ul, li, a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+a:hover{
+   text-decoration: underline rgb(207, 4, 4); 
+}
+
+figure img, .container_endereco img{
+    border: 2.5px solid rgb(150, 2, 2);
+    border-radius:9px;
+    box-shadow: 3px 3px  30px  red;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    height: 28rem;
+    width: 37rem;
+    margin: 1rem auto;
+    transition: all .11s ease;
+}
+figure img:hover{
+    transform: scale(1.1);
+}
+  
+/* -------------- /End estilos Gerais -------------- */
+
+/* -------------- Start Topo -------------- */
+header{
+    background-color: black;
+    border-bottom: 3px solid  rgb(207, 4, 4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding: 1rem;
+}
+.logo{
+    font-family: dancing Script;
+    font-weight:900;
+    font-size: 6rem;
+    margin-left: 4.5vw;
+}
+.logo a{
+    text-decoration: none;
+}
+span{
+    color: rgb(207, 4, 4);
+}
+.menu{
+    display: flex;
+    font-size: 2.2rem;
+}
+.menu li{
+    margin-right: 2rem;
+}
+.menu li a{
+    display: block;
+}
+#icone{
+    margin-right: 2rem;
+    font-size: 3.5rem;
+    color: white;
+    padding: 1rem;
+    display:none;
+    cursor: pointer;
+    width: 10%;
+}
+#icone:hover{  
+    color: rgb(207, 4, 4);
+}
+.logo_e_icone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* -------------- /End Topo -------------- */
+
+/* -------------- Start Contato-Horario -------------- */
+.conteudo_final{
+    margin-top: 4rem;
+    border-top: 2px solid red;
+    background-color: black;
+}
+h3{
+    font-family: Dancing Script ;
+    font-size:7rem ;
+}
+.geral_info{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    font-size:3rem;
+    margin: 2rem auto;
+}
+.geral_info div{
+    border-radius:9px;
+    box-shadow: 3px 3px  30px  red;
+    flex: 1 1 300px;
+    padding: 0.6rem 4rem ;
+    margin: 1rem 2rem ;
+}
+.geral_info ul li{
+    padding: 0.2rem;
+    margin: 2rem 0;
+}
+.info_contato li{
+    display: flex;
+    flex-wrap: wrap;
+}
+.geral_container_endereco{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.container_endereco {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 2 2 410px;
+    margin: 1rem 2rem ;
+}
+.container_endereco img{
+    height: 35rem;
+    width: 60rem;
+    transition: all .11s ease;
+    object-fit: cover;
+}
+iframe{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem auto ;
+    box-shadow: 3px 3px  30px red;
+    border-radius:9px;
+    width: 100%;
+    height: 35rem;
+    width: 60rem;
+}
+.gambiarra{
+    margin-top: 6rem;
+}
+/* -------------- /End Contato-Horario -------------- */
+
+/* -------------- Start menu @media -------------- */
+@media (max-width:895px){
+    #icone{
+        display: block;
+    }
+    nav{
+        display: none;
+        width: 10px;
+    }
+  header{
+        display: block;
+    }
+    .menu{
+        margin-left: 3rem;
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+}
+/* -------------- /End menu @media -------------- */
+
+@media (max-width:500px){
+    
+    .logo, h3{
+        font-size: 4rem;
+    }
+    .geral_info{
+        font-size:2rem;
+    }
+}
+@media (max-width:641px){
+    .info_hora{
+        margin: 2rem;
+    }
+    iframe{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem auto ;
+        width: 100%;  
+    }
+}
+    
+  
+
